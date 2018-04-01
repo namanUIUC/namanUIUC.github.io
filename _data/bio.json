@@ -1,57 +1,52 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "name": "Naman Shukla",
+    "label": "Graduate Student",
+    "picture": "https://namanuiuc.github.io/images/naman.jpg",
+    "email": "namans2@illinois.edu",
+    "phone": "646-267-9093",
+    "website": "https://namanuiuc.github.io",
+    "summary": "I am studying for a M.S. in Advanced Analytics with thesis in Computer Science in the Department of Industrial Engineering at the University of Illinois at Urbana Champaign. I expect to graduate in May, 2019.",
     "location": {
-      "address": "",
-      "postalCode": "96822",
-      "city": "Honolulu",
+      "address": "904 W Stoughton Street",
+      "postalCode": "61801",
+      "city": "Urbana",
       "countryCode": "USA",
-      "region": "Hawaii"
+      "region": "Illinois"
     },
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "namanUIUC",
+        "url": "http://github.com/namanUIUC"
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
-      },
-      {
-        "network": "twitter",
-        "username": "mollymal",
-        "url": "http://twitter.com/changeme"
+        "username": "shuklanaman",
+        "url": "https://www.linkedin.com/in/shuklanaman"
       },
       {
         "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/changeme"
+        "username": "naman_shukla_",
+        "url": "http://instagram.com/naman_shukla_"
       }
     ]
   },
   "interests": [
     {
-      "name": "internet of things",
+      "name": "Machine Learning",
       "keywords": [
-        "Arduino",
-        "TI MSP430"
+        "Deep Neural Network",
+        "Clustering"
       ]
     },
     {
-      "name": "data mining",
+      "name": "Computer Vision",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "Statistical Learning",
       "keywords": [
       ]
     }
@@ -59,37 +54,39 @@
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "level": "",
+      "level": "5",
       "keywords": [
         "C",
         "C++",
         "Java",
-        "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "python",
+        "SAS"
       ]
     },
     {
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
-        "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Linux",
+        "Git/Github"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "institution": "University of Illinois, Urbana Champaign, IL",
+      "area": "Advanced Analytics (expected Spring, 2019)",
+      "studyType": "M.S.",
+      "startDate": "2017-09-01",
       "endDate": "Present",
-      "gpa": "",
-      "courses": [
+      "gpa": "4.0/4.0",
+      "courses": ["Machine Learning",
+                  "Computer Vision",
+                  "Algorithms for Data Analytics",
+                  "Statistics of Big Data & Clustering",
+                  "Stochastic Processes",
+                  "Optimization Techniques",
+                  "Design of Experiments"
       ]
     }
   ],
