@@ -108,10 +108,10 @@
       "gpa": "8.54/10",
     }
   ],
-  "Projects": [
+  "work": [
     {
-      "Title": "Image to Image Translation by Cycle GANs",
-      "Language": "Python (Tensorflow)",
+      "company": "Image to Image Translation by Cycle GANs",
+      "position": "Python (Tensorflow)",
       "website": "https://cyclegans.github.io",
       "startDate": "2018-04-01",
       "endDate": "Present",
