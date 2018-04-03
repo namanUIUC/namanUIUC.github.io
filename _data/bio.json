@@ -70,7 +70,10 @@
         "C++",
         "Java",
         "python",
-        "SAS"
+        "SAS", 
+        "SQL",
+        "PHP",
+        "HTML/CSS"
       ]
     },
     {
@@ -78,7 +81,11 @@
       "level": "",
       "keywords": [
         "Linux",
-        "Git/Github"
+        "Git/Github",
+        "PyTorch",
+        "Tensorflow",
+        "Blue Waters",
+        "Google Cloud"
       ]
     }
   ],
@@ -110,68 +117,89 @@
   ],
   "work": [
     {
+      "company": "Zenvisage",
+      "position": "",
+      "website": "http://zenvisage.github.io",
+      "startDate": "2018-01-15",
+      "endDate": "Present",
+      "summary": "(Python, JAVA, SQL, HTML)",
+      "highlights": [
+        "Zenvisage is a visual exploration system that can automatically identify and recommend interesting visualizations. The user can specify at a high level what they are looking for, and the system will do the rest.",
+        "Zenvisage enables users to effortlessly receive visualization recommendations for interesting trends, patterns, and insights from large datasets.",
+        "Zenvisage is funded by GOOGLE"
+      ]
+    },
+    {
       "company": "Image to Image Translation by Cycle GANs",
-      "position": "Python (Tensorflow)",
+      "position": "",
       "website": "https://cyclegans.github.io",
       "startDate": "2018-04-01",
       "endDate": "Present",
-      "summary": "",
+      "summary": "(Python - Tensorflow)",
       "highlights": [
-        "Accomplished Adversarial Training for horse to zebra to horse",
+        "Accomplished Adversarial Training for horse to zebra to horse"
       ]
     },
     {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
-    {
-      "organization": "",
+      "company": "3D Face Reconstruction",
+      "position": "",
       "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
+      "startDate": "2018-01-15",
+      "endDate": "2018-02-31",
+      "summary": "(Python, Matlab)",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "Implemented computer vision algorithm from scratch to reconstruct 3D face from 2D images",
+        "Used Lambertian model with gaussian filtering to construct the baseline model",
+        "Attempted SIFT key point detection as a feature extraction on 3D model"
+      ]
+    },
+    {
+      "company": "Hand Written Image Recognition of USPS Dataset",
+      "position": "",
+      "website": "",
+      "startDate": "2017-8-15",
+      "endDate": "2017-12-31",
+      "summary": "(Python, Matlab)",
+      "highlights": [
+        "Extracted features through kernel PCA on 7K images from USPS dataset",
+        "Implemented classification by training linear and kernel SVM with features produced by kernel PCA",
+        "Achieved 97.3 % accuracy on image classification"
+      ]
+    },
+    {
+      "company": "Data Analytics of the Champaign County Jail System",
+      "position": "",
+      "website": "",
+      "startDate": "2017-09-1",
+      "endDate": "2017-11-28",
+      "summary": "(Python, Excel)",
+      "highlights": [
+        "Analyzed Champaign County Jail’s database of year 2015 – 16 (Local hack day initiative by Research Park)",
+        "Performed data visualization on different statistics extracted from database",
+        "Provided extended report to local county sheriff"
+      ]
+    },
+    {
+      "company": "Graphical User Interface Optimization Toolbox",
+      "position": "",
+      "website": "",
+      "startDate": "2015-05-1",
+      "endDate": "2016-01-31",
+      "summary": "(Matlab)",
+      "highlights": [
+        "Created a platform independent toolbox for model identification in biochemical reaction",
+        "Used algorithms for parameter estimation : Generic Algorithm, particle swarm optimization, BAT algorithm",
+        "Tested on lab data from IIT Bombay under the guidance of Professor Giri"
       ]
     }
   ],
+
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
-    },
-    {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "JASSO (TODAI) Scholarship",
+      "date": "2016-2017",
+      "awarder": "Government of Japan",
+      "summary": "Selected among top 20 students worldwide to design innovation workshop for high school students of Miyazaki, Japan (JASSO Scholarship provided by the Japanese government)"
     }
   ],
   "references": [
