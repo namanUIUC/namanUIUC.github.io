@@ -50,6 +50,16 @@
       "keywords": [
       ]
     }
+    {
+      "name": "Chemical Engineering",
+      "keywords": [
+      ]
+    }
+    {
+      "name": "Entrepreneurship",
+      "keywords": [
+      ]
+    }
   ],
   "skills": [
     {
@@ -89,18 +99,25 @@
                   "Design of Experiments"
       ]
     }
-  ],
-  "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
-      "startDate": "2015-08-01",
+      "institution": "Indian Institute of Technology, Hyderabad, IND",
+      "area": "Chemical Engineering and Entrepreneurship minor",
+      "studyType": "B.Tech.",
+      "startDate": "2013-09-01",
+      "endDate": "2017-05-31",
+      "gpa": "8.54/10",
+    }
+  ],
+  "Projects": [
+    {
+      "Title": "Image to Image Translation by Cycle GANs",
+      "Language": "Python (Tensorflow)",
+      "website": "https://cyclegans.github.io",
+      "startDate": "2018-04-01",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Accomplished Adversarial Training for horse to zebra to horse",
       ]
     },
     {
@@ -108,7 +125,7 @@
       "position": "Help Desk Consultant",
       "website": "http://www.hawaii.edu/its/",
       "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
+      "endDate": "",
       "summary": "",
       "highlights": [
         "Troubleshoot software, hardware and networking issues over the phone",
