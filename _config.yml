@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Naman Shukla  नमन शुक्ला "
 title_separator          : "-"
-name                     : &name "Naman Shukla"
+name                     : &name "( ͡° ͜ʖ ͡°)"
 description              : &description "personal description"
 url                      : https://namanuiuc.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
