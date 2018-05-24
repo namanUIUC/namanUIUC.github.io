@@ -12,6 +12,6 @@ I am a graduate researcher under the advisement of professor [Aditya Prameswaran
 
 # Updates
 
-- first one ! `note`
+- Participating in [Youtube-8M Challange](https://www.kaggle.com/c/youtube8m-2018).
+- Finished computer vision project on [Cycle GAN](https://arxiv.org/abs/1703.10593) - Checkout the [blog](cyclegans.github.io)!
 
-  > note 
