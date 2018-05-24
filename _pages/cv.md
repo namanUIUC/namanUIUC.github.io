@@ -11,21 +11,20 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* B.Tech. in Chemical Engineering, Indian Institute of Technology - Hyderabad, 2017
+* M.S. in Industrial Engineering, University of Illinois at Urbana-Champaign, IL, 2019 (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2016: Associate Researcher
+  * Ritsumeikan University
+  * Duties included: Evolutionary Optimization in Bio-Chemistry Lab.
+  * Supervisor: Professor Takeshi Kikuchi
 
 * Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  * Indian Institute of Technology
+  * Duties included: Optimization Toolbox Designing
+  * Supervisor: Professor Giri
   
 Skills
 ======
@@ -36,17 +35,6 @@ Skills
   * Sub-skill 2.3
 * Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
   
 Teaching
 ======
@@ -56,4 +44,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* University of Tokyo - Design and Innovation program (TISP 2016)
