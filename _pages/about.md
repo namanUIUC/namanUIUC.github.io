@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate researcher under the advisement of professor [Aditya Prameswaran](http://web.engr.illinois.edu/~adityagp/) at University of Illinois at Urbana-Champaign with an interest in machine learning, computer vision especially in the joint field of computer vision and deep learning. I am affliated to [Zenvisage group](http://zenvisage.cs.illinois.edu). I did my undergraduate studies at Indian Institute of Technology (IIT), Hyderabad in chemical engineering with entrepreneurship minor. I worked as associate researcher at [Ritsumeikan University](http://en.ritsumei.ac.jp), Japan with professor [Takeshi Kikuchi](http://www.ritsumei.ac.jp/ls/news/article.html/?id=84) in 2016 summers.  
+I am a graduate researcher under the advisement of professor [Aditya Prameswaran](http://web.engr.illinois.edu/~adityagp/) at University of Illinois at Urbana-Champaign with an interest in machine learning, computer vision especially in the joint field of computer vision and deep learning. I am affliated to [Zenvisage group](http://zenvisage.cs.illinois.edu). I did my undergraduate studies at [Indian Institute of Technology (IIT), Hyderabad](https://www.iith.ac.in) in chemical engineering with entrepreneurship minor. I worked as associate researcher at [Ritsumeikan University](http://en.ritsumei.ac.jp), Japan with professor [Takeshi Kikuchi](http://www.ritsumei.ac.jp/ls/news/article.html/?id=84) in 2016 summers.  
 
 # Updates
 
