@@ -12,6 +12,7 @@ I am a graduate researcher under the advisement of professor [Aditya Prameswaran
 
 # Updates
 
+- I will be joining [DeepAir](http://deepair.io) as a research intern for summers' 18. 
 - Participating in [Youtube-8M Challange](https://research.google.com/youtube8m/index.html).
 - Finished computer vision project on [Cycle GAN](https://arxiv.org/abs/1703.10593) - Checkout the [blog](https://cyclegans.github.io)!
 
