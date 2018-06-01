@@ -14,9 +14,9 @@
 ## Base settings ##
 url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: Zhenye Na
+title: Naman Shukla
 description: > #this means to ignore newlines until "nav_lists:"
-    UIUC Graduate Student in ISE | Google-Oriented-Programming
+    UIUC Graduate Student in ISE | Learning with Machines
 
 nav_lists:
   - titles:
@@ -35,7 +35,7 @@ paths:
   # rss:  /feed.xml
 
 ## GitHub repository (if the site is hosted by GitHub) ##
-repository: zhenye-na/zhenye-na.github.io
+repository: namanuiuc/namanuiuc.github.io
 repository_tree: master
 
 ## Language & timezone ##
@@ -44,22 +44,22 @@ timezone: America/Chicago
 
 ## Author & social ##
 author:
-  name: "Zhenye Na"
-  email: zna2@illinois.edu
-  facebook:  zhenye.na.1 #your Facebook username
+  name: "Naman Shukla"
+  email: namans2@illinois.edu
+  facebook:  naman shukla #your Facebook username
   # twitter: kitian616
-  github:  zhenye-na
+  github:  namanuiuc
   # googleplus:
   # weibo: 
   # douban: 
-  linkedin:  zhenyena #your Linkedin username
+  linkedin:  shuklanaman #your Linkedin username
 
 ## Comment system (Disqus) ##
 disqus:
-  shortname: zhenye #the Disqus shortname for the site
+  shortname: Naman #the Disqus shortname for the site
 
 ## Google Analytics ##
-ga_tracking_id: UA-116457928-1 #Google analytics id for the site
+# ga_tracking_id: UA-116457928-1 #Google analytics id for the site
 
 ## Reading quantity (LeanCloud) ##
 # leancloud:
