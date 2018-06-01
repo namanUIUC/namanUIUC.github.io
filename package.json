@@ -1,33 +1,37 @@
 {
-  "name": "minimal-mistakes",
-  "version": "3.4.2",
-  "description": "Minimal Mistakes Jekyll theme npm build scripts",
+  "name": "personal-site",
+  "version": "2.0.0",
+  "description": "My Personal Website, powered by jekyll-TeXt-theme",
+  "scripts": {
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve -H 0.0.0.0",
+    "dev": "bundle exec jekyll serve -H 0.0.0.0 -t",
+    "production": "JEKYLL_ENV=production bundle exec jekyll serve -H 0.0.0.0 -t",
+    "favicon": "gulp favicon",
+    "icons": "gulp icons",
+    "artwork": "gulp artwork",
+    "merge": "sh bin/merge.sh",
+    "cm-merge": "git commit -m 'chore: merge to Text Theme'",
+    "cm-post": "git commit -m 'feat: publish new post'"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git+https://github.com/kitian616/kitian616.github.io.git"
   },
   "keywords": [
     "jekyll",
-    "theme",
-    "minimal"
+    "jekyll-site"
   ],
-  "author": "Michael Rose",
+  "author": "Tian Qi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": "https://github.com/kitian616/issues"
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
-  "engines": {
-    "node": ">= 0.10.0"
-  },
+  "homepage": "https://github.com/kitian616#readme",
   "devDependencies": {
-    "npm-run-all": "^1.7.0",
-    "onchange": "^2.2.0",
-    "uglify-js": "^2.6.1"
-  },
-  "scripts": {
-    "uglify": "uglifyjs assets/js/vendor/jquery/jquery-1.12.4.min.js assets/js/plugins/jquery.fitvids.js assets/js/plugins/jquery.greedy-navigation.js assets/js/plugins/jquery.magnific-popup.js assets/js/plugins/jquery.smooth-scroll.min.js assets/js/plugins/stickyfill.min.js assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
-    "build:js": "npm run uglify"
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-to-ico": "^1.0.0"
   }
 }
