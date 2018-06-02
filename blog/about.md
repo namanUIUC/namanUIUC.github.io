@@ -5,22 +5,20 @@ key: page-about
 comment: false
 ---
 
-<img src="https://github.com/Zhenye-Na/Zhenye-Na.github.io/blob/master/assets/images/avatar/avatar.jpg?raw=true" class="avatar" vspace="50" />
+<img src="https://avatars2.githubusercontent.com/u/32119068?s=400&u=38e8de7c68be340fb15051934c4b587be16d12f7&v=4" class="avatar" vspace="50" />
 <br>
 <div align="center">
-<img src="http://ghchart.rshah.org/f94f54/Zhenye-Na" alt="Zhenye-Na's Blue Github Chart" />
+<img src="http://ghchart.rshah.org/000000/namanuiuc" alt="namanuiuc's Blue Github Chart" />
 <br><br>
 </div>
- 
 
-## Welcome!
 
-I am Zhenye Na, a Master candidate in Department of Industrial and Enterprise Systems Engineering [(ISE)](https://ise.illinois.edu/) at University of Illinois at Urbana-Champaign [(UIUC)](http://illinois.edu/). I am majoring in Advanced Analytics and my concentration is in Computational Science & Engeering. I am currently advised by [Prof. Justin A. Sirignano](http://jasirign.github.io/) for my graduate study.
+## Hi all!
+
+I am Naman Shukla, a Master candidate in Department of Industrial and Enterprise Systems Engineering [(ISE)](https://ise.illinois.edu/) at University of Illinois at Urbana-Champaign [(UIUC)](http://illinois.edu/). I am majoring in Advanced Analytics and my concentration is in Computational Science & Engineering. I am currently advised by [Prof. Aditya Prameswaran](hhttp://data-people.cs.illinois.edu) for my graduate study.
 <!--{: style="text-align: justify"}-->
 
 I am interested in research related to Machine Learning, Deep Learning and Computer Vision. I am also interested in Audio Analysis, Speech, Image Processing and other Data Science related fields.
-
-I received my B.E. in Harbor, Waterway and Coastal Engineering from Dalian University of Technology [(DUT)](http://en.dlut.edu.cn/).
 
 <!--{: style="text-align: justify"}-->
 
