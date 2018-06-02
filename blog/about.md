@@ -5,7 +5,7 @@ key: page-about
 comment: false
 ---
 
-<img src="https://uillinoisedu-my.sharepoint.com/:i:/g/personal/namans2_illinois_edu/ERsnJYocSoxBhyOYOS-TXI4B6LP8flD5c7_Z4x-FfEh1Bg?e=xipNf2" class="avatar" vspace="50" />
+<img src="https://github.com/namanUIUC/namanUIUC.github.io/blob/master/assets/images/avatar/img-3.jpg?raw=true" class="avatar" vspace="50" />
 <br>
 <div align="center">
 <img src="http://ghchart.rshah.org/f94f54/namanuiuc" alt="namanuiuc's Blue Github Chart" />
