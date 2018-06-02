@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Understanding Youtube-8m Challange"
+title: "Understanding Youtube-8m Challenge"
 date: 2018-05-30
 excerpt: "need to add explanation"
 tags: [Vision]
