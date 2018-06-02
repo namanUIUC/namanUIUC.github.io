@@ -16,6 +16,19 @@ The idea is to train many NN to have a group such that each of them specializes 
 
 In `boosting`, the weights on the model are not all equal, but after we finish training, each model has the same weight for each test case. We don't make the weights of individual model depend on which particular case we're dealing with. In `MoE` we do ! 
 
+### Concept
+
 > **Idea** : We can look at the input data for the particular case (during both training and testing) to help us decide on which model we can rely on. During training, this will allow models to specialize on a subset of the cases. They **do not learn** on the cases for which they are not picked. This will lead to a model that is very good at something but very bad at other things. 
 
 The key idea is to make each expert focus on predicting the right answer for the cases where it is already doing better than the other experts. 
+
+### Spectrum of models
+
+| Very local models      | Fully global models |
+| ---------------------- | ------------------- |
+| Ex - Nearest Neighbors | Regression          |
+
+In between the above models, we have multiple models which have intermediate complexity. This is good if the dataset have different regimes and these regimes have different input-output relationships. So we have this problem: if we are gonna use different models for different regimes, how do we partition dataset into these regimes ?
+
+### Partitioning
+
