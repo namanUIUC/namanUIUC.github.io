@@ -5,7 +5,7 @@ key: page-about
 comment: false
 ---
 
-<img src="https://avatars2.githubusercontent.com/u/32119068?s=400&u=38e8de7c68be340fb15051934c4b587be16d12f7&v=4" class="avatar" vspace="50" />
+<img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/14089311_1832380203651268_6633640030685007350_n.jpg?_nc_cat=0&oh=77ac07b1bf5bec77b1e6a974c48522a0&oe=5B7F0715" class="avatar" vspace="50" />
 <br>
 <div align="center">
 <img src="http://ghchart.rshah.org/000000/namanuiuc" alt="namanuiuc's Blue Github Chart" />
