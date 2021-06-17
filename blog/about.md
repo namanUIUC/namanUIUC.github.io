@@ -1,24 +1,20 @@
 ---
 layout: page
-title: About
+title:  About
 key: page-about
 comment: false
 ---
 
-<img src="https://github.com/namanUIUC/namanUIUC.github.io/blob/master/assets/images/avatar/avatar.jpg?raw=true" class="avatar" vspace="50" />
+<!-- <img src="https://github.com/namanUIUC/namanUIUC.github.io/blob/master/assets/images/avatar/avatar.jpg?raw=true" class="avatar" vspace="50" />
 <br>
 <div align="center">
 <img src="http://ghchart.rshah.org/f94f54/namanuiuc" alt="namanuiuc's Blue Github Chart" />
 <br><br>
-</div>
+</div> -->
 
+## Namaste 
 
-## Hi all!
-
-I am Naman Shukla, a Master candidate in Department of Industrial and Enterprise Systems Engineering [(ISE)](https://ise.illinois.edu/) at University of Illinois at Urbana-Champaign [(UIUC)](http://illinois.edu/). I am majoring in Advanced Analytics and my concentration is in Computational Science & Engineering. I am currently advised by [Prof. Aditya Prameswaran](hhttp://data-people.cs.illinois.edu) for my graduate study.
-<!--{: style="text-align: justify"}-->
-
-I am interested in research related to Machine Learning, Deep Learning and Computer Vision. I am also interested in Audio Analysis, Speech, Image Processing and other Data Science related fields.
+To support more wine content :wine_glass: in Namaste :pray:
 
 <!--{: style="text-align: justify"}-->
 

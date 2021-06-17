@@ -14,9 +14,9 @@
 ## Base settings ##
 url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: Naman Shukla
+title: Namaste
 description: > #this means to ignore newlines until "nav_lists:"
-    UIUC Graduate Student in ISE | Learning with Machines
+    Learning with Machines
 
 nav_lists:
   - titles:
@@ -45,7 +45,7 @@ timezone: America/Chicago
 ## Author & social ##
 author:
   name: "Naman Shukla"
-  email: namans2@illinois.edu
+  email: naman@deepair.io
   facebook:  naman shukla #your Facebook username
   # twitter: kitian616
   github:  namanuiuc
