@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning Price Sensitivity"
+title: "Thought Experiment: Learning Price Sensitivity"
 date: 2020-07-01
 excerpt: "Help me find out which loss function is appropriate"
 tags: [Revenue Management, Pricing, Thought Experiment, Neural Networks]
