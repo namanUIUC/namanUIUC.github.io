@@ -21,9 +21,6 @@ description: > #this means to ignore newlines until "nav_lists:"
 nav_lists:
   - titles:
       en: About
-      zh: 关于
-      zh-Hans: 关于
-      zh-Hant: 關於
     url: /blog/about.html
 
 
@@ -47,7 +44,7 @@ author:
   name: "Naman Shukla"
   email: naman@deepair.io
   facebook:  naman shukla #your Facebook username
-  # twitter: kitian616
+  twitter: namanatulshukla
   github:  namanuiuc
   # googleplus:
   # weibo: 
