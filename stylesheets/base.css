@@ -603,6 +603,9 @@ span.darkred {
 span.blue {
   color: #4d8795;
 }
+span.grey {
+  color: #777;
+}
 
 .fancy-button {
   -moz-box-shadow: inset 0px 1px 0px 0px #bee2f9;
