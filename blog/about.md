@@ -12,13 +12,14 @@ comment: false
 <br><br>
 </div> -->
 
-## Namaste 
 
-Place where I share my thoughts, experience and opinions with everyone. 
+--- 
 
-To support more wine content :wine_glass: in Namaste :pray:
+Site under construction :hammer:
 
+---
 
+<span class='darkred'> :pray: To support more wine content :wine_glass: in Travel AI  </span>
 
 <style>
 img.center {

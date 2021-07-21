@@ -14,7 +14,7 @@
 ## Base settings ##
 url:  #the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl: /
-title: Namaste
+title: Travel AI
 description: > #this means to ignore newlines until "nav_lists:"
     Learning with Machines
 
