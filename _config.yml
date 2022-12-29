@@ -56,7 +56,7 @@ disqus:
   shortname: Naman #the Disqus shortname for the site
 
 # Google Analytics ##
-ga_tracking_id: UA-117419759-1 #Google analytics id for the site
+ga_tracking_id: G-832KTPQ33M #Google analytics id for the site
 
 ## Reading quantity (LeanCloud) ##
 # leancloud:
