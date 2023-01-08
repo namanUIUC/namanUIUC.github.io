@@ -155,8 +155,7 @@ footer {
 ================================================== */
 body {
   background: #fff;
-  font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font: 14px/21px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
   color: #444;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -171,7 +170,7 @@ h4,
 h5,
 h6 {
   color: #181818;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
   font-weight: normal;
 }
 h1 a,
