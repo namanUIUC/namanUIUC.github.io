@@ -23,10 +23,10 @@
     letter-spacing: -1px;
     font-weight: bold; }
   nav ul {
-    float: left;  }
+    }
   nav ul li {
     display: block;
-    margin-bottom: 0px; }
+    text-align: center; }
   nav ul li a,
   nav ul li a:visited,
   nav ul li a:active  {
@@ -141,10 +141,10 @@
   /* Mobile */
   @media only screen and (max-width: 767px) {
     header h1 { font-size: 34px; line-height: 37px; }
-    nav { position: relative; }
+    nav { position: relative; margin: auto;}
     nav ul,
     .carbonad {
-        display: none;
+        display: block;
     }
     #logo { text-align: left; }
     #examples .four.columns {
