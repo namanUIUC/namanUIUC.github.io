@@ -1,0 +1,681 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Naman Shukla">
+  <div
+    class="container mx-auto py-8 px-8 max-w-screen-lg grid grid-cols-11 h-screen"
+  >
+    <!-- Sidebar -->
+    <div class="col-span-2 mt-8 text-center">
+      <nav class="fixed">
+        <div id="logo" class="">
+          <Image
+            src="/naman.png"
+            class="rounded-full mx-auto mb-2 w-36 h-36"
+            alt="My avatar."
+            width="50"
+            height="50"
+          />
+          <h4 class="text-center text-lg font-bold mt-4 text-slate-900">
+            Naman Shukla
+          </h4>
+        </div>
+        <ul class="text-sm font-semibold">
+          <hr class="my-2" />
+          <li class="my-1">
+            <a
+              href="https://github.com/namanuiuc"
+              target="_blank"
+              class="text-slate-500">Github</a
+            >
+          </li>
+          <li class="my-1">
+            <a
+              href="https://twitter.com/namanatulshukla"
+              target="_blank"
+              class="text-slate-500">Twitter</a
+            >
+          </li>
+          <li class="my-1">
+            <a
+              href="https://www.linkedin.com/in/shuklanaman/"
+              target="_blank"
+              class="text-slate-500">LinkedIn</a
+            >
+          </li>
+          <li class="my-1">
+            <a
+              href="https://scholar.google.com/citations?user=3qPDIu0AAAAJ&hl=en"
+              target="_blank"
+              class="text-slate-500">Google Scholar</a
+            >
+          </li>
+          <li class="my-1">
+            <a
+              href="./assets/resume/CV.pdf"
+              target="_blank"
+              class="text-slate-500">Curriculum Vitae</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="col-span-9 ml-8 h-full">
+      <div id="aboutme">
+        <h3 class="text-2xl font-light my-4">About me</h3>
+        <div
+          class="text-justify font-light text-sm leading-relaxed text-slate-950"
+        >
+          <p class="mb-2">
+            Naman is a
+            <a
+              href="https://fullscale.io/blog/what-is-a-technical-product-owner/"
+              target="_blank"
+              class="no-underline text-blue-900 font-semibold"
+            >
+              Product Manager
+            </a>
+            in the Applied Science team at
+            <a
+              href="https://flyrlabs.com/"
+              target="_blank"
+              class="no-underline text-blue-900 font-semibold"
+            >
+              FLYR Inc.</a
+            > where he leads a team of data scientists to build exciting machine
+            learning models that can bring value to existing revenue management systems
+            for airlines. He is responsible for driving the development and implementation
+            of advanced machine learning algorithms and statistical models that leverage
+            contextual information to optimize pricing strategies for airlines.
+          </p>
+          <p class="mb-2">
+            Prior to this, his research focused on dynamic pricing with
+            contextual information, where he developed machine learning
+            algorithms and statistical methods to analyze revenue management
+            data and engineer computational techniques. His work has been
+            published in esteemed journals such as the Journal for Applied
+            Analytics in Institute for Operations Research and the Management
+            Sciences (INFORMS) and Airline Group of the International Federation
+            of Operational Research Societies (AGIFORS).
+          </p>
+          <p class="mb-2">
+            Naman's expertise in machine learning solutions has been deployed by
+            major airlines and travel providers in Europe and Asia through his
+            role as a machine learning engineer, research infrastructure
+            manager, and software engineer at Deepair. He developed software
+            tools and frameworks that are used by in-house data science teams
+            and researchers at esteemed institutions such as the University of
+            Illinois at Urbana Champaign, Imperial College London, and the
+            University of Notre Dame. He was a part of the team that achieved
+            New Distribution Capability (NDC) level 4 certification by the
+            International Air Transport Association (IATA).
+          </p>
+
+          <p class="mb-2">
+            Naman received his masters of science in Industrial Engineering from
+            the University of Illinois at Urbana Champaign, IL. He is a
+            recipient of Japan student services organization (JASSO) scholarship
+            for innovation program by University of Tokyo, Japan. He was awarded
+            computational biology scholarship for associate researcher at
+            Ritsumeikan University, Japan. He has a bachelor of technology in
+            Chemical Engineering and minor in Entrepreneurship both with
+            academic excellence award from Indian Institute of Technology,
+            Hyderabad, India.
+          </p>
+        </div>
+      </div>
+
+      <hr class="my-8" />
+      <div id="Professional Work">
+        <h3 class="text-2xl font-light my-4">Work Experience</h3>
+        <ul class="list-disc pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            <strong class="font-semibold">FLYR Inc.</strong>&emsp;San Francisco,
+            CA<br />
+            Product Manager [<em>Aug 2022 - Current</em>]<br />
+          </li>
+
+          <li>
+            <strong class="font-semibold">Deepair Solutions</strong
+            >&emsp;London, UK<br />
+            Lead Data Scientist [<em>May 2018 - July 2022</em>]<br />
+          </li>
+        </ul>
+      </div>
+
+      <hr class="my-8" />
+      <div id="education">
+        <h3 class="text-2xl font-light my-4">Education</h3>
+        <ul class="list-disc pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            <strong class="font-semibold">University of Illinois</strong
+            >&emsp;Urbana-Champaign, IL<br />
+            <em>Master of Science</em> in Advanced Analytics.<br />
+            Thesis:
+            <em
+              >Dynamic Pricing for Airline Ancillaries with Customer Context</em
+            >.
+          </li>
+          <li class="mb-2">
+            <strong class="font-semibold">Indian Institute of Technology</strong
+            >&emsp;Hyderabad, India<br />
+            <em>Bachelor of Technology</em> in Chemical Engineering with entrepreneurship
+            minor.<br />
+          </li>
+        </ul>
+      </div>
+
+      <hr class="my-8" />
+      <div id="publications">
+        <h3 class="text-2xl font-light my-4">Publications</h3>
+        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            P Yang, A Kolbeinsson, <strong>N Shukla</strong> Deep contrastive anomaly
+            detection for airline ancillaries prediction<br />
+            <em
+              >Twenty-first IEEE International Conference on Machine Learning
+              and Applications. 2022.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://spiral.imperial.ac.uk/handle/10044/1/100547"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>, K Yellepeddi.<br />
+            Negotiating Networks in Oligopoly Markets for Price-Sensitive Products.<br
+            />
+            <em
+              >Thirty-fifth Conference on Neural Information Processing Systems
+              (NeurIPS) WS. 2021.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://arxiv.org/abs/2110.13303"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >arXiv</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            A Garg, <strong>N Shukla</strong>, L Marla, S Somanchi.<br />
+            Distribution Shifts in Airline Customer Behavior during COVID-19.<br
+            />
+            <em
+              >Thirty-fifth Conference on Neural Information Processing Systems
+              (NeurIPS) WS. 2021.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://arxiv.org/abs/2111.14938"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >arXiv</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            A Kolbeinsson, <strong>N Shukla</strong>, A Gupta, L Marla, K
+            Yellepeddi.<br />
+            Galactic Air Improves Airline Ancillary Revenues with Dynamic Personalized
+            Pricing.<br />
+            <em>Special Issue of INFORMS Journal on Applied Analytics. 2021.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836941"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            A Gupta, L Marla, R Sun, <strong>N Shukla</strong>, A Kolbeinsson.<br
+            />
+            PenDer: Incorporating Shape Constraints via Penalized Derivatives.<br
+            />
+            <em>Proc. 35th AAAI Conference on Artificial Intelligence. 2021.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://www.aaai.org/AAAI21Papers/AAAI-9099.GuptaA.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>, A Kolbeinsson, L Marla, K Yellepeddi.<br
+            />
+            From Average Customer to Individual Traveler: A Field Experiment in Airline
+            Ancillary Pricing.<br />
+            <em
+              >Institute for Operations Research and the Management Sciences.
+              2020.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3518854"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>.<br />
+            Dynamic Pricing for Airline Ancillaries. <br />
+            <em
+              >Masters Thesis, University of Illinois at Urbana-Champaign
+              (UIUC). 2019.</em
+            >
+            <div class="block my-1">
+              <a
+                href="./assets/publications/Thesis.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>, A Kolbeinsson, K Otwell, L Marla, K
+            Yellepeddi.<br />
+            Dynamic Pricing for Airline Ancillaries with Customer Context.<br />
+            <em
+              >Proc. 25th ACM SIGKDD Intl. Conf. on Knowledge discovery and data
+              mining (KDD). 2019.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://www.kdd.org/kdd2019/accepted-papers/view/dynamic-pricing-for-airline-ancillaries-with-customer-context"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+              <a
+                href="https://arxiv.org/abs/1902.02236"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >arXiv</a
+              >
+              <a
+                href="https://www.youtube.com/watch?v=y2bQlsCjgLM"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Video</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            A Gupta, <strong>N Shukla</strong>, L Marla, A Kolbeinsson, K
+            Yellepeddi.<br />
+            How to Incorporate Monotonicity in Deep NetworksWhile Preserving Flexibility?<br
+            />
+            <em
+              >Thirty-third Conference on Neural Information Processing Systems
+              (NeurIPS) WS. 2019.</em
+            >
+            <div class="block my-1">
+              <a
+                href=""
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Workshop</a
+              >
+              <a
+                href=""
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >arXiv</a
+              >
+              <a
+                href=""
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Poster</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>, A Kolbeinsson, L Marla, K Yellepeddi.<br
+            />
+            Adaptive Model Selection Framework: An Application to Airline Pricing<br
+            />
+            <em
+              >Thirty-sixth International Conference on Machine Learning (ICML)
+              WS</em
+            >. 2019.
+            <div class="block my-1">
+              <a
+                href="https://realworld-sdm.github.io/"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Workshop</a
+              ><a
+                href="https://arxiv.org/abs/1905.08874"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >arXiv</a
+              >
+              <a
+                href="./assets/publications/ICML_poster.pdf"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Poster</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            A Kolbeinsson, <strong>N Shukla</strong>, A Gupta, L Marla.<br />
+            Leveraging Time Dependency in Graphs.<br />
+            <em
+              >Thirty-third Conference on Neural Information Processing Systems
+              (NeurIPS) WS. 2019.</em
+            >
+            <div class="block my-1">
+              <a
+                href=""
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Workshop</a
+              >
+              <a
+                href=""
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >PDF</a
+              >
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <hr class="my-8" />
+      <div id="talks">
+        <h3 class="text-2xl font-light my-4">Talks</h3>
+        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            A Garg, <strong>N Shukla</strong>, L Marla.<br />
+            Dealing with distribution shifts in customer choice due to COVID - 19<br
+            />
+            <em
+              >Airline Group of the International Federation of Operational
+              Research Society (AGIFORS)</em
+            >. 2021.
+            <div class="block my-1">
+              <a
+                href="https://youtu.be/ouPCGrgO4qM"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Video</a
+              >
+              <a
+                href="https://publications.agifors.org/documents/A.%20Garg%20et%20al.%20-%20Dealing%20with%20distribution%20shifts%20in%20customer%20choice%20due%20to%20COVID-19.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >Slides</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            B Kolbeinsson, <strong>N Shukla</strong>, A Kolbeinsson.<br />
+            FLAI: Reinforcement Learning Virtual Platform for Travel <br />
+            <em
+              >Airline Group of the International Federation of Operational
+              Research Society (AGIFORS)</em
+            >. 2021.
+            <div class="block my-1">
+              <a
+                href="https://youtu.be/nK4SsV0qjKY"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Video</a
+              >
+              <a
+                href="https://publications.agifors.org/documents/N.%20Shukla%20-%20FLAI%20Reinforcement%20Learning%20Virtual%20Platform%20for%20Travel.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >Slides</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong>N Shukla</strong>, L Marla, K Yellepeddi.<br />
+            Deep Learning Algorithms for Dynamic Pricing of Airline Ancillaries with
+            Customer Context <br />
+            <em
+              >Airline Group of the International Federation of Operational
+              Research Society (AGIFORS)</em
+            >. 2019.
+            <div class="block my-1">
+              <a
+                href="https://www.agifors.org/rm-2019"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Web</a
+              >
+              <a
+                href="./assets/publications/AGIFORS_RM_2019.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                >Slides</a
+              >
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <hr class="my-8" />
+      <div id="work">
+        <h3 class="text-2xl font-light my-4">Softwares</h3>
+        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            <strong>Deep pricing© for exchange rates</strong>: Dynamic pricing
+            solution for pricing exchange rates for reward points.
+          </li>
+          <li class="mb-2">
+            <strong>Deep pricing© for ancillaries</strong>: Dynamic pricing
+            solution for pricing ancillaries in airline industry
+          </li>
+          <li class="mb-2">
+            <strong>Fluent</strong>: Deepair's internal framework for
+            orchestrating life cycle of pricing agents. Currently powering all
+            pricing agents deployed by Deepair Solutions.
+          </li>
+          <li class="mb-2">
+            <strong>Flai</strong>: A toolkit for developing and comparing
+            reinforcement learning algorithms. Created with Imperial College
+            London and University of Illinois at Urbana-Champaign.
+            <div class="block my-1">
+              <a
+                href="https://github.com/deepair-io/flai"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Github</a
+              >
+              <a
+                href="https://deepair-io.github.io/flai/#/"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Website</a
+              >
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <hr class="my-8" />
+      <div id="acadprojects">
+        <h3 class="text-2xl font-light my-4">Academic Projects</h3>
+        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+          <li class="mb-2">
+            <strong>Double Deep Q-Learning (Double DQN)</strong><br />
+            Flappy Bird (Android game) hack using deep reinforcement learning with
+            double Q-learning<br />
+            <em
+              >University of Illinois at Urbana-Champaign (UIUC). Fall 2018.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://drl-dql.github.io/posts/"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Blog</a
+              ><a
+                href="./assets/projects/DDQN/report.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >PDF</a
+              ><a
+                href="https://github.com/drl-dql/DQN-Flappy-Bird"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Repository</a
+              ><a
+                href="./assets/projects/DDQN/text.pdf"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Text</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong
+              >Cycle Consistent Generative Adversarial Network (Cycle-GAN)</strong
+            ><br />
+            A deep neural network based on cycle consistent image to image translation
+            with generative adversarial networks<br />
+            <em
+              >University of Illinois at Urbana-Champaign (UIUC). Spring 2018.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://cyclegans.github.io/"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Blog</a
+              >
+              <a
+                href="./assets/projects/CGAN/report.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >PDF</a
+              >
+              <a
+                href="https://github.com/CycleGANS/V1.0"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Repository</a
+              >
+              <a
+                href="./assets/projects/DDQN/text.pdf"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Text</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong
+              >Wasserstein Deep Convolutional Generative Adversarial Network
+              (DC-GAN)</strong
+            ><br />
+            Deep convolutional neural network that genrates pokemons using wasserstein
+            generative adversarial networks<br />
+            <em
+              >University of Illinois at Urbana-Champaign (UIUC). Spring 2018.</em
+            >
+            <div class="block my-1">
+              <a
+                href="https://github.com/Zhenye-Na/pokemon-gan/tree/master/Tensorflow"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Tensorflow</a
+              ><a
+                href="https://github.com/Zhenye-Na/pokemon-gan/tree/master/Pytorch"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Pytorch</a
+              >
+              <a
+                href="./assets/projects/WGAN/text.pdf"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Text</a
+              >
+            </div>
+          </li>
+          <li class="mb-2">
+            <strong
+              >Handwritten Digit Recognition by Kernel PCA (Kernal PCA)</strong
+            ><br />
+            Kernal based principal component analysis for feature extraction on hand
+            written images provided by USPS<br />
+            <em
+              >University of Illinois at Urbana-Champaign (UIUC). Fall 2017.</em
+            >
+            <div class="block my-1">
+              <a
+                href="./assets/projects/KPCA/report.pdf"
+                target="_blank"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >PDF</a
+              >
+              <a
+                href="https://github.com/namanUIUC/NonlinearComponentAnalysis"
+                target="_blank"
+                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Repository</a
+              >
+              <a
+                href="./assets/projects/KPCA/text.pdf"
+                target="_blank"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Text</a
+              >
+              <a
+                href="./assets/projects/KPCA/slides.pdf"
+                target="_blank"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Slides</a
+              >
+              <a
+                href="https://mybinder.org/v2/gh/namanUIUC/NonlinearComponentAnalysis/master"
+                target="_blank"
+                class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                >Demo</a
+              >
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- <hr class="my-8" />
+      <div class="doc-section" id="patent">
+        <h3 class="text-xl font-bold my-4">Patents</h3>
+        <ol class="list-decimal pl-5">
+          <li>Coming soon..</li>
+        </ol>
+      </div> -->
+    </div>
+    <!-- Content -->
+    <footer
+      class="col-span-11 text-center mt-8 pb-8 text-xs font-light text-slate-800"
+    >
+      <hr class="border-t-8 border-slate-200 mb-8" />
+      <p>2021 © Naman Shukla. All Rights Reserved.</p>
+    </footer>
+  </div>
+</Layout>
