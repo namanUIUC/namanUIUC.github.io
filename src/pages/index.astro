@@ -5,11 +5,11 @@ import { Image } from "astro:assets";
 
 <Layout title="Naman Shukla">
   <div
-    class="container mx-auto py-8 px-8 max-w-screen-lg grid grid-cols-11 h-screen"
+    class="container mx-auto py-8 px-8 lg:max-w-screen-lg md:grid md:grid-cols-11 h-screen"
   >
     <!-- Sidebar -->
-    <div class="col-span-2 mt-8 text-center">
-      <nav class="fixed">
+    <div class="md:col-span-2 mt-8 text-center">
+      <nav class="md:fixed">
         <div id="logo" class="">
           <Image
             src="/naman.png"
@@ -64,7 +64,7 @@ import { Image } from "astro:assets";
     </div>
 
     <!-- Content -->
-    <div class="col-span-9 ml-8 h-full">
+    <div class="md:col-span-9 md:ml-8 md:h-full">
       <div id="aboutme">
         <h3 class="text-2xl font-light my-4">About me</h3>
         <div
@@ -671,11 +671,11 @@ import { Image } from "astro:assets";
       </div> -->
     </div>
     <!-- Content -->
-    <footer
-      class="col-span-11 text-center mt-8 pb-8 text-xs font-light text-slate-800"
+    <div
+      class="md:col-span-11 text-center mt-8 pb-8 text-xs font-light text-slate-800"
     >
       <hr class="border-t-8 border-slate-200 mb-8" />
       <p>2021 © Naman Shukla. All Rights Reserved.</p>
-    </footer>
+    </div>
   </div>
 </Layout>
