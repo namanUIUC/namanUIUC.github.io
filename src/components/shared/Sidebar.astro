@@ -1,0 +1,88 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div class="md:col-span-2 mt-8 text-center">
+    <nav class="md:fixed">
+        <div id="logo" class="">
+            <Image
+                src="/naman.png"
+                class="rounded-full mx-auto mb-2 w-36 h-36"
+                alt="My avatar."
+                width="50"
+                height="50"
+            />
+            <h4
+                class="text-center text-lg font-semibold mt-4 text-text font-eb-garamond tracking-wide"
+            >
+                Naman Shukla
+            </h4>
+        </div>
+        <ul class="text-sm font-medium font-spectral">
+            <hr class="my-2" />
+            <li class="my-1">
+                <a
+                    href="https://github.com/namanuiuc"
+                    target="_blank"
+                    class="text-mutedText hover:text-text transition-colors"
+                    >Github</a
+                >
+            </li>
+            <li class="my-1">
+                <a
+                    href="https://twitter.com/namanatulshukla"
+                    target="_blank"
+                    class="text-mutedText hover:text-text transition-colors"
+                    >Twitter</a
+                >
+            </li>
+            <li class="my-1">
+                <a
+                    href="https://www.linkedin.com/in/shuklanaman/"
+                    target="_blank"
+                    class="text-mutedText hover:text-text transition-colors"
+                    >LinkedIn</a
+                >
+            </li>
+            <li class="my-1">
+                <a
+                    href="https://scholar.google.com/citations?user=3qPDIu0AAAAJ&hl=en"
+                    target="_blank"
+                    class="text-mutedText hover:text-text transition-colors"
+                    >Google Scholar</a
+                >
+            </li>
+            <li class="my-1">
+                <a
+                    href="./assets/resume/CV.pdf"
+                    target="_blank"
+                    class="text-mutedText hover:text-text transition-colors"
+                    >Curriculum Vitae</a
+                >
+            </li>
+            <li class="my-1 mt-4">
+                <a
+                    href="https://topmate.io/namanshukla/"
+                    target="_blank"
+                    class="cursor:pointer bg-primary bg-opacity-10 text-primary text-sm font-medium inline-flex items-center px-2.5 py-1 rounded border-primary border-opacity-20"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-5 h-5 me-1.5"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
+                        ></path>
+                    </svg>
+                    Click to chat!
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
