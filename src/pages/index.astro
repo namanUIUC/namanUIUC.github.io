@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Sidebar from "../components/shared/Sidebar.astro";
 import Footer from "../components/shared/Footer.astro";
+import ThemeToggle from "../components/shared/ThemeToggle.astro";
 import AboutMe from "../components/sections/AboutMe.astro";
 import WorkExperience from "../components/sections/WorkExperience.astro";
 import Education from "../components/sections/Education.astro";
@@ -13,25 +14,38 @@ import { Image } from "astro:assets";
 ---
 
 <Layout title="Naman Shukla">
+  <ThemeToggle />
   <div
-    class="container mx-auto py-8 px-8 lg:max-w-screen-lg md:grid md:grid-cols-11 h-screen bg-paper text-text"
+    class="container mx-auto py-8 px-8 lg:max-w-screen-lg md:grid md:grid-cols-11 h-screen bg-paper dark:bg-darkPaper text-text dark:text-darkText"
   >
     <Sidebar />
 
     <!-- Content -->
     <div class="md:col-span-9 md:ml-8 md:h-full">
       <AboutMe />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <WorkExperience />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <Education />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <Publications />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <Talks />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <Software />
-      <hr class="my-8 border-mutedText border-opacity-20" />
+      <hr
+        class="my-8 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
       <AcademicProjects />
 
       <!-- Keep other sections for now -->
