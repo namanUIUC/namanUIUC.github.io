@@ -1,201 +1,81 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Sidebar from "../components/shared/Sidebar.astro";
+import Footer from "../components/shared/Footer.astro";
+import AboutMe from "../components/sections/AboutMe.astro";
+import WorkExperience from "../components/sections/WorkExperience.astro";
+import Education from "../components/sections/Education.astro";
+import Publications from "../components/sections/Publications.astro";
+import Talks from "../components/sections/Talks.astro";
+import Software from "../components/sections/Software.astro";
+import AcademicProjects from "../components/sections/AcademicProjects.astro";
 import { Image } from "astro:assets";
 ---
 
 <Layout title="Naman Shukla">
   <div
-    class="container mx-auto py-8 px-8 lg:max-w-screen-lg md:grid md:grid-cols-11 h-screen"
+    class="container mx-auto py-8 px-8 lg:max-w-screen-lg md:grid md:grid-cols-11 h-screen bg-paper text-text"
   >
-    <!-- Sidebar -->
-    <div class="md:col-span-2 mt-8 text-center">
-      <nav class="md:fixed">
-        <div id="logo" class="">
-          <Image
-            src="/naman.png"
-            class="rounded-full mx-auto mb-2 w-36 h-36"
-            alt="My avatar."
-            width="50"
-            height="50"
-          />
-          <h4 class="text-center text-lg font-bold mt-4 text-slate-900">
-            Naman Shukla
-          </h4>
-        </div>
-        <ul class="text-sm font-semibold">
-          <hr class="my-2" />
-          <li class="my-1">
-            <a
-              href="https://github.com/namanuiuc"
-              target="_blank"
-              class="text-slate-500">Github</a
-            >
-          </li>
-          <li class="my-1">
-            <a
-              href="https://twitter.com/namanatulshukla"
-              target="_blank"
-              class="text-slate-500">Twitter</a
-            >
-          </li>
-          <li class="my-1">
-            <a
-              href="https://www.linkedin.com/in/shuklanaman/"
-              target="_blank"
-              class="text-slate-500">LinkedIn</a
-            >
-          </li>
-          <li class="my-1">
-            <a
-              href="https://scholar.google.com/citations?user=3qPDIu0AAAAJ&hl=en"
-              target="_blank"
-              class="text-slate-500">Google Scholar</a
-            >
-          </li>
-          <li class="my-1">
-            <a
-              href="./assets/resume/CV.pdf"
-              target="_blank"
-              class="text-slate-500">Curriculum Vitae</a
-            >
-          </li>
-          <li class="my-1 mt-4">
-            <a
-              href="https://topmate.io/namanshukla/"
-              target="_blank"
-              class="cursor:pointer bg-blue-100 text-blue-800 text-sm font-medium inline-flex items-center px-2.5 py-1 rounded border-blue-400"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5 me-1.5"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"
-                ></path>
-              </svg>
-
-              Click to chat!
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <Sidebar />
 
     <!-- Content -->
     <div class="md:col-span-9 md:ml-8 md:h-full">
-      <div id="aboutme">
-        <h3 class="text-2xl font-light my-4">About me</h3>
-        <div
-          class="text-justify font-light text-sm leading-relaxed text-slate-950"
-        >
-          <p class="mb-2">
-            Naman is a
-            <a
-              href="https://www.heap.io/topics/what-does-a-product-manager-do"
-              target="_blank"
-              class="no-underline text-blue-900 font-semibold"
-            >
-              Senior Product Manager
-            </a>
-            in the data science team at
-            <a
-              href="https://www.engine.com/"
-              target="_blank"
-              class="no-underline text-blue-900 font-semibold"
-            >
-              Engine</a
-            >, where he own building advanced pricing strategies. He drives the
-            development of pricing models and machine learning solutions that
-            optimize decision-making frameworks and deliver business value.
-          </p>
+      <AboutMe />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <WorkExperience />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <Education />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <Publications />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <Talks />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <Software />
+      <hr class="my-8 border-mutedText border-opacity-20" />
+      <AcademicProjects />
 
-          <p class="mb-2">
-            Before joining Engine, Naman was a Product Manager in the Applied
-            Science team at
-            <a
-              href="https://flyrlabs.com/"
-              target="_blank"
-              class="no-underline text-blue-900 font-semibold"
-            >
-              FLYR Inc.</a
-            >, where he led a team of data scientists to develop machine
-            learning models that enhanced airline revenue management systems. He
-            spearheaded efforts to implement statistical models leveraging
-            contextual information to optimize pricing strategies for airlines.
-          </p>
-
-          <p class="mb-2">
-            Naman's research expertise lies in dynamic pricing with contextual
-            information, where he developed innovative algorithms and
-            computational techniques to analyze revenue management data. His
-            work has been published in renowned journals, including the Journal
-            for Applied Analytics by the Institute for Operations Research and
-            the Management Sciences (INFORMS) and the Airline Group of the
-            International Federation of Operational Research Societies
-            (AGIFORS).
-          </p>
-
-          <p class="mb-2">
-            His experience extends to roles such as Machine Learning Engineer,
-            Research Infrastructure Manager, and Software Engineer at Deepair,
-            where he built tools and frameworks utilized by global airlines and
-            academic institutions like the University of Illinois at
-            Urbana-Champaign, Imperial College London, and the University of
-            Notre Dame. Notably, he was part of the team that secured New
-            Distribution Capability (NDC) Level 4 certification from the
-            International Air Transport Association (IATA).
-          </p>
-
-          <p class="mb-2">
-            Naman holds a Master of Science in Industrial Engineering from the
-            University of Illinois at Urbana-Champaign. He is a recipient of the
-            Japan Student Services Organization (JASSO) scholarship for the
-            Innovation Program at the University of Tokyo, Japan, and the
-            Computational Biology Scholarship for Associate Researchers at
-            Ritsumeikan University, Japan. He earned a Bachelor of Technology in
-            Chemical Engineering and a Minor in Entrepreneurship, both with
-            academic excellence awards, from the Indian Institute of Technology,
-            Hyderabad.
-          </p>
-        </div>
-      </div>
-
-      <hr class="my-8" />
+      <!-- Keep other sections for now -->
+      <!-- <hr class="my-8" />
       <div id="Professional Work">
-        <h3 class="text-2xl font-light my-4">Work Experience</h3>
-        <ul class="list-disc pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-medium my-4 font-eb-garamond tracking-wide">
+          💼 Work Experience
+        </h3>
+        <ul
+          class="list-disc pl-5 text-sm font-light text-slate-950 font-spectral"
+        >
           <li class="mb-2">
-            <strong class="font-semibold">Engine</strong>&emsp;San Francisco, CA<br
+            <strong class="font-medium">Engine</strong>&emsp;San Francisco, CA<br
             />
-            Senior Product Manager [<em>Oct 2024 - Current</em>]<br />
+            Senior Product Manager [<em class="italic">Oct 2024 - Current</em
+            >]<br />
           </li>
 
           <li class="mb-2">
-            <strong class="font-semibold">FLYR Inc.</strong>&emsp;San Francisco,
+            <strong class="font-medium">FLYR Inc.</strong>&emsp;San Francisco,
             CA<br />
-            Product Manager [<em>Aug 2022 - Sept 2024</em>]<br />
+            Product Manager [<em class="italic">Aug 2022 - Sept 2024</em>]<br />
           </li>
 
           <li>
-            <strong class="font-semibold">Deepair Solutions</strong
-            >&emsp;London, UK<br />
-            Lead Data Scientist [<em>May 2018 - July 2022</em>]<br />
+            <strong class="font-medium">Deepair Solutions</strong>&emsp;London,
+            UK<br />
+            Lead Data Scientist [<em class="italic">May 2018 - July 2022</em
+            >]<br />
           </li>
         </ul>
       </div>
 
       <hr class="my-8" />
       <div id="education">
-        <h3 class="text-2xl font-light my-4">Education</h3>
-        <ul class="list-disc pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-medium my-4 font-eb-garamond tracking-wide">
+          🎓 Education
+        </h3>
+        <ul
+          class="list-disc pl-5 text-sm font-light text-slate-950 spectral-light"
+        >
           <li class="mb-2">
-            <strong class="font-semibold">University of Illinois</strong
+            <strong class="font-semibold spectral-medium"
+              >University of Illinois</strong
             >&emsp;Urbana-Champaign, IL<br />
             <em>Master of Science</em> in Advanced Analytics.<br />
             Thesis:
@@ -204,7 +84,8 @@ import { Image } from "astro:assets";
             >.
           </li>
           <li class="mb-2">
-            <strong class="font-semibold">Indian Institute of Technology</strong
+            <strong class="font-semibold spectral-medium"
+              >Indian Institute of Technology</strong
             >&emsp;Hyderabad, India<br />
             <em>Bachelor of Technology</em> in Chemical Engineering with entrepreneurship
             minor.<br />
@@ -214,13 +95,18 @@ import { Image } from "astro:assets";
 
       <hr class="my-8" />
       <div id="publications">
-        <h3 class="text-2xl font-light my-4">Publications</h3>
-        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-medium my-4 font-eb-garamond tracking-wide">
+          📖 Publications
+        </h3>
+        <ol
+          class="list-decimal pl-5 text-sm font-light text-slate-950 font-spectral"
+        >
           <li class="mb-2">
-            P Yang, A Kolbeinsson, <strong>N Shukla</strong>.<br />
+            P Yang, A Kolbeinsson, <strong class="font-medium">N Shukla</strong
+            >.<br />
             Deep contrastive anomaly detection for airline ancillaries prediction.<br
             />
-            <em
+            <em class="italic"
               >Twenty-first IEEE International Conference on Machine Learning
               and Applications. 2022.</em
             >
@@ -228,16 +114,16 @@ import { Image } from "astro:assets";
               <a
                 href="https://spiral.imperial.ac.uk/handle/10044/1/100547"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
           </li>
           <li class="mb-2">
-            <strong>N Shukla</strong>, K Yellepeddi.<br />
+            <strong class="font-medium">N Shukla</strong>, K Yellepeddi.<br />
             Negotiating Networks in Oligopoly Markets for Price-Sensitive Products.<br
             />
-            <em
+            <em class="italic"
               >Thirty-fifth Conference on Neural Information Processing Systems
               (NeurIPS) WS. 2021.</em
             >
@@ -245,7 +131,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://arxiv.org/abs/2110.13303"
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-pink-200 transition-colors"
                 >arXiv</a
               >
             </div>
@@ -262,7 +148,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://arxiv.org/abs/2111.14938"
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-pink-200 transition-colors"
                 >arXiv</a
               >
             </div>
@@ -278,7 +164,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3836941"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
@@ -294,7 +180,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://www.aaai.org/AAAI21Papers/AAAI-9099.GuptaA.pdf"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
@@ -312,7 +198,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3518854"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
@@ -328,7 +214,7 @@ import { Image } from "astro:assets";
               <a
                 href="./assets/publications/Thesis.pdf"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
@@ -345,19 +231,19 @@ import { Image } from "astro:assets";
               <a
                 href="https://www.kdd.org/kdd2019/accepted-papers/view/dynamic-pricing-for-airline-ancillaries-with-customer-context"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
               <a
                 href="https://arxiv.org/abs/1902.02236"
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-pink-200 transition-colors"
                 >arXiv</a
               >
               <a
                 href="https://www.youtube.com/watch?v=y2bQlsCjgLM"
                 target="_blank"
-                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-orange-200 transition-colors"
                 >Video</a
               >
             </div>
@@ -375,19 +261,19 @@ import { Image } from "astro:assets";
               <a
                 href=""
                 target="_blank"
-                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-green-200 transition-colors"
                 >Workshop</a
               >
               <a
                 href=""
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-pink-200 transition-colors"
                 >arXiv</a
               >
               <a
                 href=""
                 target="_blank"
-                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-orange-200 transition-colors"
                 >Poster</a
               >
             </div>
@@ -405,18 +291,18 @@ import { Image } from "astro:assets";
               <a
                 href="https://realworld-sdm.github.io/"
                 target="_blank"
-                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-green-200 transition-colors"
                 >Workshop</a
               ><a
                 href="https://arxiv.org/abs/1905.08874"
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-pink-200 transition-colors"
                 >arXiv</a
               >
               <a
                 href="./assets/publications/ICML_poster.pdf"
                 target="_blank"
-                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-orange-200 transition-colors"
                 >Poster</a
               >
             </div>
@@ -432,13 +318,13 @@ import { Image } from "astro:assets";
               <a
                 href=""
                 target="_blank"
-                class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded uppercase hover:bg-green-200 transition-colors"
                 >Workshop</a
               >
               <a
                 href=""
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded"
+                class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded hover:bg-blue-200 transition-colors"
                 >PDF</a
               >
             </div>
@@ -448,10 +334,12 @@ import { Image } from "astro:assets";
 
       <hr class="my-8" />
       <div id="talks">
-        <h3 class="text-2xl font-light my-4">Talks</h3>
-        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-light my-4 section-title">🎤 Talks</h3>
+        <ol
+          class="list-decimal pl-5 text-sm font-light text-slate-950 spectral-light"
+        >
           <li class="mb-2">
-            A Gupta, <strong>N Shukla</strong>.<br />
+            A Gupta, <strong class="spectral-medium">N Shukla</strong>.<br />
             Generating optimal bid prices via reinforcement learning with batch and
             shape constraints<br />
             <em
@@ -462,13 +350,13 @@ import { Image } from "astro:assets";
               <a
                 href="https://flyr.com/resource-hub/unlocking-efficiency-and-revenue-deep-q-learning-with-batch-constraints/"
                 target="_blank"
-                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase spectral-regular"
                 >Blog</a
               >
               <a
                 href="https://publications.agifors.org/file.php?name=RMSG24+-+Flyr+-+Gupta+Shukla&s=1719438824"
                 target="_blank"
-                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase spectral-regular"
                 >Slides</a
               >
             </div>
@@ -563,11 +451,15 @@ import { Image } from "astro:assets";
 
       <hr class="my-8" />
       <div id="work">
-        <h3 class="text-2xl font-light my-4">Softwares</h3>
-        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-light my-4 section-title">💻 Softwares</h3>
+        <ol
+          class="list-decimal pl-5 text-sm font-light text-slate-950 spectral-light"
+        >
           <li class="mb-2">
-            <strong>Deep pricing© for exchange rates</strong>: Dynamic pricing
-            solution for pricing exchange rates for reward points.
+            <strong class="spectral-medium"
+              >Deep pricing© for exchange rates</strong
+            >: Dynamic pricing solution for pricing exchange rates for reward
+            points.
           </li>
           <li class="mb-2">
             <strong>Deep pricing© for ancillaries</strong>: Dynamic pricing
@@ -602,10 +494,16 @@ import { Image } from "astro:assets";
 
       <hr class="my-8" />
       <div id="acadprojects">
-        <h3 class="text-2xl font-light my-4">Academic Projects</h3>
-        <ol class="list-decimal pl-5 text-sm font-light text-slate-950">
+        <h3 class="text-2xl font-light my-4 section-title">
+          👨‍🎓 Academic Projects
+        </h3>
+        <ol
+          class="list-decimal pl-5 text-sm font-light text-slate-950 spectral-light"
+        >
           <li class="mb-2">
-            <strong>Double Deep Q-Learning (Double DQN)</strong><br />
+            <strong class="spectral-medium"
+              >Double Deep Q-Learning (Double DQN)</strong
+            ><br />
             Flappy Bird (Android game) hack using deep reinforcement learning with
             double Q-learning<br />
             <em
@@ -615,7 +513,7 @@ import { Image } from "astro:assets";
               <a
                 href="https://drl-dql.github.io/posts/"
                 target="_blank"
-                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase"
+                class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded uppercase spectral-regular"
                 >Blog</a
               ><a
                 href="./assets/projects/DDQN/report.pdf"
@@ -744,7 +642,7 @@ import { Image } from "astro:assets";
             </div>
           </li>
         </ol>
-      </div>
+      </div> -->
 
       <!-- <hr class="my-8" />
       <div class="doc-section" id="patent">
@@ -754,12 +652,7 @@ import { Image } from "astro:assets";
         </ol>
       </div> -->
     </div>
-    <!-- Content -->
-    <div
-      class="md:col-span-11 text-center mt-8 pb-8 text-xs font-light text-slate-800"
-    >
-      <hr class="border-t-8 border-slate-200 mb-8" />
-      <p>2024 © Naman Shukla. All Rights Reserved.</p>
-    </div>
+
+    <Footer />
   </div>
 </Layout>
