@@ -1,13 +1,13 @@
 <button
     id="theme-toggle"
-    class="p-2 rounded-full bg-primary bg-opacity-10 text-primary fixed top-4 right-4 z-10 hover:bg-opacity-20 transition-colors"
+    class="p-2 rounded-full bg-primary bg-opacity-10 text-primary dark:bg-darkPrimary dark:bg-opacity-10 dark:text-darkPrimary fixed top-4 right-4 z-10 hover:bg-opacity-20 dark:hover:bg-opacity-20 transition-colors"
     aria-label="Toggle Dark Mode"
 >
     <!-- Sun icon (for dark mode) -->
     <svg
         id="sun-icon"
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5 hidden"
+        class="h-5 w-5"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -24,7 +24,7 @@
     <svg
         id="moon-icon"
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 hidden"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -59,16 +59,13 @@
         }
     }
 
-    // Check for saved theme preference or use user preference
+    // Check for saved theme preference or default to dark
     const savedTheme = localStorage.getItem("theme");
-    const userPrefersDark =
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     // Set initial theme
     if (savedTheme) {
         setTheme(savedTheme);
-    } else if (userPrefersDark) {
+    } else {
         setTheme("dark");
     }
 
@@ -77,14 +74,4 @@
         const isDark = document.documentElement.classList.contains("dark");
         setTheme(isDark ? "light" : "dark");
     });
-
-    // Update theme if user changes system preference
-    window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", (e) => {
-            if (!localStorage.getItem("theme")) {
-                setTheme(e.matches ? "dark" : "light");
-            }
-        });
 </script>
-

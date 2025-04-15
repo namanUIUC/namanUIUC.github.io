@@ -40,14 +40,11 @@ const { title } = Astro.props;
 
     <!-- Theme initialization to prevent flash of wrong theme -->
     <script is:inline>
-      // Immediately on page load, check saved theme or system preference
+      // Immediately on page load, check saved theme or use dark by default
       const savedTheme = localStorage.getItem("theme");
-      const prefersDark =
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-      // If we have a saved theme, use it, otherwise use system preference
-      const theme = savedTheme || (prefersDark ? "dark" : "light");
+      // If we have a saved theme use it, otherwise default to dark
+      const theme = savedTheme || "dark";
 
       // Add the dark class if needed
       if (theme === "dark") {
