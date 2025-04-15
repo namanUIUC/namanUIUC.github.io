@@ -10,7 +10,7 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Naman Shukla's Personal Website" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
@@ -25,17 +25,38 @@ const { title } = Astro.props;
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-832KTPQ33M"
     ></script>
-    <script>
+    <script is:inline>
+      // @ts-ignore
       window.dataLayer = window.dataLayer || [];
       function gtag() {
-        dataLayer.push(arguments);
+        // @ts-ignore
+        window.dataLayer.push(arguments);
       }
+      // @ts-ignore
       gtag("js", new Date());
-
+      // @ts-ignore
       gtag("config", "G-832KTPQ33M");
     </script>
+
+    <!-- Theme initialization to prevent flash of wrong theme -->
+    <script is:inline>
+      // Immediately on page load, check saved theme or use dark by default
+      const savedTheme = localStorage.getItem("theme");
+
+      // If we have a saved theme use it, otherwise default to dark
+      const theme = savedTheme || "dark";
+
+      // Add the dark class if needed
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
-  <body class="font-spectral font-normal bg-paper">
+  <body
+    class="font-spectral font-normal bg-paper dark:bg-darkPaper text-text dark:text-darkText transition-colors duration-200"
+  >
     <slot />
   </body>
 </html>
