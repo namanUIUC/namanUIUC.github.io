@@ -17,6 +17,16 @@ import { Image } from "astro:assets";
             >
                 Naman Shukla
             </h4>
+            <!-- Flipping Badge -->
+            <div class="mt-1 mb-3">
+                <span
+                    id="flipping-badge"
+                    class="inline-flex items-center justify-center px-2 py-1 text-xs font-medium rounded-full bg-secondary dark:bg-darkSecondary bg-opacity-10 dark:bg-opacity-10 text-secondary dark:text-darkSecondary"
+                >
+                    <span id="badge-emoji">💼</span>
+                    <span id="badge-text" class="ml-1">Product Manager</span>
+                </span>
+            </div>
         </div>
         <ul class="text-sm font-medium font-spectral">
             <hr
@@ -88,3 +98,51 @@ import { Image } from "astro:assets";
         </ul>
     </nav>
 </div>
+
+<script>
+    // This script makes the badge flip between different labels
+    document.addEventListener("DOMContentLoaded", () => {
+        const badgeEmoji = document.getElementById("badge-emoji");
+        const badgeText = document.getElementById("badge-text");
+        const flippingBadge = document.getElementById("flipping-badge");
+
+        // Array of different badge contents with emojis and text
+        const badges = [
+            { emoji: "💼", text: "Product Manager" },
+            { emoji: "🚀", text: "Entrepreneur" },
+            { emoji: "🧠", text: "AI/ML Researcher" },
+            { emoji: "🏐", text: "Beach Volley'er" },
+            { emoji: "🎵", text: "Music Lover" },
+            { emoji: "✈️", text: "Digital Nomad" },
+            { emoji: "❤️", text: "Data Scientist" },
+            { emoji: "🎲", text: "Game Theorist" },
+            { emoji: "🏆", text: "Problem Solver" },
+            { emoji: "📚", text: "Lifelong Learner" },
+        ];
+
+        let currentIndex = 0;
+
+        // Function to update the badge
+        function updateBadge() {
+            // Add fade-out class
+            flippingBadge.classList.add("opacity-0");
+
+            // Wait for fade out animation
+            setTimeout(() => {
+                // Update content
+                currentIndex = (currentIndex + 1) % badges.length;
+                badgeEmoji.textContent = badges[currentIndex].emoji;
+                badgeText.textContent = badges[currentIndex].text;
+
+                // Add fade-in class
+                flippingBadge.classList.remove("opacity-0");
+            }, 300);
+        }
+
+        // Add CSS transition to the badge
+        flippingBadge.style.transition = "opacity 0.3s ease-in-out";
+
+        // Start the interval to flip the badge every 4 seconds
+        setInterval(updateBadge, 4000);
+    });
+</script>
