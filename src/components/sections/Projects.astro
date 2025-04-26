@@ -1,0 +1,196 @@
+---
+import { getCollection } from "astro:content";
+
+// Get all projects and sort by date (newest first)
+const allProjects = await getCollection("projects");
+const sortedProjects = allProjects.sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Format date to readable string
+function formatDate(date) {
+    return date.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+    });
+}
+---
+
+<div id="portfolio">
+    <!-- <h3
+        class="text-2xl font-medium my-4 font-eb-garamond tracking-wide text-text dark:text-darkText"
+    >
+        ✨ Portfolio
+    </h3> -->
+    <div class="py-4"></div>
+
+    <!-- For smaller screens: Horizontal scrollable container -->
+    <div class="md:hidden relative">
+        <!-- Scroll text indicator - positioned above the scrollable area -->
+        <div class="flex justify-center mb-2">
+            <p
+                class="text-[10px] text-mutedText dark:text-darkMutedText flex items-center opacity-70"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="w-3 h-3 mr-1"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                Swipe to see more projects
+            </p>
+        </div>
+
+        <!-- Scrollable content container -->
+        <div class="overflow-x-auto py-4 no-scrollbar touch-pan-x">
+            <div class="flex gap-4 px-4 pb-4">
+                {
+                    sortedProjects.map((project) => (
+                        <a
+                            href={`/projects/${project.slug}`}
+                            class="block group flex-shrink-0 w-60"
+                        >
+                            <div class="relative h-32 w-full rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                                {/* Image background with gradient overlay */}
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 z-10" />
+
+                                {project.data.image ? (
+                                    <img
+                                        src={project.data.image}
+                                        alt={project.data.title}
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        loading="lazy"
+                                    />
+                                ) : (
+                                    <div class="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-darkPrimary/20 dark:to-darkSecondary/20" />
+                                )}
+
+                                {/* Content overlay */}
+                                <div class="absolute inset-0 z-20 p-4 flex flex-col justify-end">
+                                    <h4 class="text-sm font-medium text-white line-clamp-1 group-hover:underline decoration-1 underline-offset-2">
+                                        {project.data.title}
+                                    </h4>
+
+                                    {project.data.tags &&
+                                        project.data.tags.length > 0 && (
+                                            <div class="flex flex-wrap gap-1 mt-1">
+                                                {project.data.tags
+                                                    .slice(0, 2)
+                                                    .map((tag) => (
+                                                        <span class="bg-tertiary dark:bg-darkTertiary backdrop-blur-sm text-[10px] px-1.5 py-0.5 rounded-full text-white">
+                                                            {tag}
+                                                        </span>
+                                                    ))}
+                                                {project.data.tags.length >
+                                                    2 && (
+                                                    <span class="text-[10px] text-white/70">
+                                                        +
+                                                        {project.data.tags
+                                                            .length - 2}
+                                                    </span>
+                                                )}
+                                            </div>
+                                        )}
+                                </div>
+                            </div>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- For larger screens: Marquee -->
+    <div class="hidden md:block relative overflow-hidden py-4">
+        <!-- Marquee Track -->
+        <div class="marquee-track flex gap-4">
+            {
+                [...sortedProjects, ...sortedProjects].map((project) => (
+                    <a
+                        href={`/projects/${project.slug}`}
+                        class="block group flex-shrink-0 w-64"
+                    >
+                        <div class="relative h-32 w-full rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+                            {/* Image background with gradient overlay */}
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/20 z-10" />
+
+                            {project.data.image ? (
+                                <img
+                                    src={project.data.image}
+                                    alt={project.data.title}
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading="lazy"
+                                />
+                            ) : (
+                                <div class="w-full h-full bg-gradient-to-br from-primary/20 to-secondary/20 dark:from-darkPrimary/20 dark:to-darkSecondary/20" />
+                            )}
+
+                            {/* Content overlay */}
+                            <div class="absolute inset-0 z-20 p-4 flex flex-col justify-end">
+                                <h4 class="text-sm font-medium text-white line-clamp-1 group-hover:underline decoration-1 underline-offset-2">
+                                    {project.data.title}
+                                </h4>
+
+                                {project.data.tags &&
+                                    project.data.tags.length > 0 && (
+                                        <div class="flex flex-wrap gap-1 mt-1">
+                                            {project.data.tags
+                                                .slice(0, 2)
+                                                .map((tag) => (
+                                                    <span class="bg-tertiary dark:bg-darkTertiary backdrop-blur-sm text-[10px] px-1.5 py-0.5 rounded-full text-white">
+                                                        {tag}
+                                                    </span>
+                                                ))}
+                                            {project.data.tags.length > 2 && (
+                                                <span class="text-[10px] text-white/70">
+                                                    +
+                                                    {project.data.tags.length -
+                                                        2}
+                                                </span>
+                                            )}
+                                        </div>
+                                    )}
+                            </div>
+                        </div>
+                    </a>
+                ))
+            }
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Hide scrollbar but keep functionality */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    /* Marquee animation */
+    .marquee-track {
+        animation: marquee 30s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    /* Pause animation on hover */
+    .marquee-track:hover {
+        animation-play-state: paused;
+    }
+</style>

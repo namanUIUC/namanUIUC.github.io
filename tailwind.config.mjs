@@ -30,6 +30,59 @@ export default {
         'darkText': '#FFFFFF', 
         'darkMutedText': '#8F9097',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              color: 'var(--tw-prose-links)',
+              '&:hover': {
+                color: 'var(--tw-prose-links-hover)',
+              },
+            },
+            'h1, h2, h3, h4': {
+              'font-family': '"EB Garamond", serif',
+            },
+            '--tw-prose-body': '#10121A',
+            '--tw-prose-headings': '#10121A',
+            '--tw-prose-lead': '#10121A',
+            '--tw-prose-links': '#FD4B22',
+            '--tw-prose-links-hover': '#d03111',
+            '--tw-prose-bold': '#10121A',
+            '--tw-prose-counters': '#6B7280',
+            '--tw-prose-bullets': '#6B7280',
+            '--tw-prose-hr': '#E5E7EB',
+            '--tw-prose-quotes': '#1F2937',
+            '--tw-prose-quote-borders': '#E5E7EB',
+            '--tw-prose-captions': '#6B7280',
+            '--tw-prose-code': '#10121A',
+            '--tw-prose-pre-code': '#E5E7EB',
+            '--tw-prose-pre-bg': '#1F2937',
+            '--tw-prose-th-borders': '#D1D5DB',
+            '--tw-prose-td-borders': '#E5E7EB',
+          },
+        },
+        invert: {
+          css: {
+            '--tw-prose-body': '#FFFFFF',
+            '--tw-prose-headings': '#FFFFFF',
+            '--tw-prose-lead': '#FFFFFF',
+            '--tw-prose-links': '#7ECBD9',
+            '--tw-prose-links-hover': '#5bb8ca',
+            '--tw-prose-bold': '#FFFFFF',
+            '--tw-prose-counters': '#8F9097',
+            '--tw-prose-bullets': '#8F9097',
+            '--tw-prose-hr': '#374151',
+            '--tw-prose-quotes': '#F3F4F6',
+            '--tw-prose-quote-borders': '#374151',
+            '--tw-prose-captions': '#8F9097',
+            '--tw-prose-code': '#FFFFFF',
+            '--tw-prose-pre-code': '#D1D5DB',
+            '--tw-prose-pre-bg': '#2C3039',
+            '--tw-prose-th-borders': '#4B5563',
+            '--tw-prose-td-borders': '#374151',
+          },
+        },
+      },
     },
   },
   corePlugins: {
@@ -82,6 +135,14 @@ export default {
           '@apply text-tertiary dark:text-darkTertiary': {},
         },
       })
-    }
+    },
+    function() {
+      try {
+        return require('@tailwindcss/typography');
+      } catch (e) {
+        console.warn('Tailwind Typography plugin not installed. Run `npm install @tailwindcss/typography` to enable Markdown styling.');
+        return {};
+      }
+    }(),
   ],
 };
