@@ -3,132 +3,132 @@ import { Image } from "astro:assets";
 ---
 
 <div class="md:col-span-2 mt-8 text-center">
-    <nav class="md:fixed">
-        <div id="logo" class="">
-            <Image
-                src="/headshot/naman.png"
-                class="rounded-full mx-auto mb-2 w-36 h-36"
-                alt="My avatar."
-                width="50"
-                height="50"
-            />
-            <h4
-                class="text-center text-lg font-semibold mt-4 text-text dark:text-darkText font-eb-garamond tracking-wide"
-            >
-                Naman Shukla
-            </h4>
-            <!-- Flipping Badge -->
-            <div class="mt-1 mb-3">
-                <span
-                    id="flipping-badge"
-                    class="badge-secondary rounded-full text-xs font-medium px-2 py-1"
-                >
-                    <span id="badge-emoji">💼</span>
-                    <span id="badge-text" class="ml-1">Product Manager</span>
-                </span>
-            </div>
-        </div>
-        <ul class="text-sm font-medium font-spectral">
-            <hr
-                class="my-2 border-mutedText dark:border-darkMutedText border-opacity-20"
-            />
-            <li class="my-1">
-                <a
-                    href="https://github.com/namanuiuc"
-                    target="_blank"
-                    class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
-                    >Github</a
-                >
-            </li>
-            <li class="my-1">
-                <a
-                    href="https://twitter.com/namanatulshukla"
-                    target="_blank"
-                    class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
-                    >Twitter</a
-                >
-            </li>
-            <li class="my-1">
-                <a
-                    href="https://www.linkedin.com/in/shuklanaman/"
-                    target="_blank"
-                    class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
-                    >LinkedIn</a
-                >
-            </li>
-            <li class="my-1">
-                <a
-                    href="https://scholar.google.com/citations?user=3qPDIu0AAAAJ&hl=en"
-                    target="_blank"
-                    class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
-                    >Google Scholar</a
-                >
-            </li>
-            <li class="my-1">
-                <a
-                    href="./assets/resume/CV.pdf"
-                    target="_blank"
-                    class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
-                    >Curriculum Vitae</a
-                >
-            </li>
-            <li class="my-1 mt-4">
-                <a
-                    href="https://topmate.io/namanshukla/"
-                    target="_blank"
-                    class="btn-rounded"
-                >
-                    Click to chat!
-                </a>
-            </li>
-        </ul>
-    </nav>
+  <nav class="md:fixed">
+    <div id="logo" class="">
+      <Image
+        src="/headshot/naman.jpeg"
+        class="rounded-full mx-auto mb-2 w-36 h-36"
+        alt="My avatar."
+        width="50"
+        height="50"
+      />
+      <h4
+        class="text-center text-lg font-semibold mt-4 text-text dark:text-darkText font-eb-garamond tracking-wide"
+      >
+        Naman Shukla
+      </h4>
+      <!-- Flipping Badge -->
+      <div class="mt-1 mb-3">
+        <span
+          id="flipping-badge"
+          class="badge-secondary rounded-full text-xs font-medium px-2 py-1"
+        >
+          <span id="badge-emoji">💼</span>
+          <span id="badge-text" class="ml-1">Product Manager</span>
+        </span>
+      </div>
+    </div>
+    <ul class="text-sm font-medium font-spectral">
+      <hr
+        class="my-2 border-mutedText dark:border-darkMutedText border-opacity-20"
+      />
+      <li class="my-1">
+        <a
+          href="https://github.com/namanuiuc"
+          target="_blank"
+          class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
+          >Github</a
+        >
+      </li>
+      <li class="my-1">
+        <a
+          href="https://twitter.com/namanatulshukla"
+          target="_blank"
+          class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
+          >Twitter</a
+        >
+      </li>
+      <li class="my-1">
+        <a
+          href="https://www.linkedin.com/in/shuklanaman/"
+          target="_blank"
+          class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
+          >LinkedIn</a
+        >
+      </li>
+      <li class="my-1">
+        <a
+          href="https://scholar.google.com/citations?user=3qPDIu0AAAAJ&hl=en"
+          target="_blank"
+          class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
+          >Google Scholar</a
+        >
+      </li>
+      <li class="my-1">
+        <a
+          href="./assets/resume/CV.pdf"
+          target="_blank"
+          class="text-mutedText dark:text-darkMutedText hover:text-text dark:hover:text-darkText transition-colors"
+          >Curriculum Vitae</a
+        >
+      </li>
+      <li class="my-1 mt-4">
+        <a
+          href="https://topmate.io/namanshukla/"
+          target="_blank"
+          class="btn-rounded"
+        >
+          Click to chat!
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <script>
-    // This script makes the badge flip between different labels
-    document.addEventListener("DOMContentLoaded", () => {
-        const badgeEmoji = document.getElementById("badge-emoji");
-        const badgeText = document.getElementById("badge-text");
-        const flippingBadge = document.getElementById("flipping-badge");
+  // This script makes the badge flip between different labels
+  document.addEventListener("DOMContentLoaded", () => {
+    const badgeEmoji = document.getElementById("badge-emoji");
+    const badgeText = document.getElementById("badge-text");
+    const flippingBadge = document.getElementById("flipping-badge");
 
-        // Array of different badge contents with emojis and text
-        const badges = [
-            { emoji: "💼", text: "Product Manager" },
-            { emoji: "🚀", text: "Entrepreneur" },
-            { emoji: "🧠", text: "AI/ML Researcher" },
-            { emoji: "🏐", text: "Beach Volley'er" },
-            { emoji: "🎵", text: "Music Lover" },
-            { emoji: "✈️", text: "Digital Nomad" },
-            { emoji: "❤️", text: "Data Scientist" },
-            { emoji: "🎲", text: "Game Theorist" },
-            { emoji: "🏆", text: "Problem Solver" },
-            { emoji: "📚", text: "Lifelong Learner" },
-        ];
+    // Array of different badge contents with emojis and text
+    const badges = [
+      { emoji: "💼", text: "Product Manager" },
+      { emoji: "🚀", text: "Entrepreneur" },
+      { emoji: "🧠", text: "AI/ML Researcher" },
+      { emoji: "🏐", text: "Beach Volley'er" },
+      { emoji: "🎵", text: "Music Lover" },
+      { emoji: "✈️", text: "Digital Nomad" },
+      { emoji: "❤️", text: "Data Scientist" },
+      { emoji: "🎲", text: "Game Theorist" },
+      { emoji: "🏆", text: "Problem Solver" },
+      { emoji: "📚", text: "Lifelong Learner" },
+    ];
 
-        let currentIndex = 0;
+    let currentIndex = 0;
 
-        // Function to update the badge
-        function updateBadge() {
-            // Add fade-out class
-            flippingBadge.classList.add("opacity-0");
+    // Function to update the badge
+    function updateBadge() {
+      // Add fade-out class
+      flippingBadge.classList.add("opacity-0");
 
-            // Wait for fade out animation
-            setTimeout(() => {
-                // Update content
-                currentIndex = (currentIndex + 1) % badges.length;
-                badgeEmoji.textContent = badges[currentIndex].emoji;
-                badgeText.textContent = badges[currentIndex].text;
+      // Wait for fade out animation
+      setTimeout(() => {
+        // Update content
+        currentIndex = (currentIndex + 1) % badges.length;
+        badgeEmoji.textContent = badges[currentIndex].emoji;
+        badgeText.textContent = badges[currentIndex].text;
 
-                // Add fade-in class
-                flippingBadge.classList.remove("opacity-0");
-            }, 300);
-        }
+        // Add fade-in class
+        flippingBadge.classList.remove("opacity-0");
+      }, 300);
+    }
 
-        // Add CSS transition to the badge
-        flippingBadge.style.transition = "opacity 0.3s ease-in-out";
+    // Add CSS transition to the badge
+    flippingBadge.style.transition = "opacity 0.3s ease-in-out";
 
-        // Start the interval to flip the badge every 4 seconds
-        setInterval(updateBadge, 4000);
-    });
+    // Start the interval to flip the badge every 4 seconds
+    setInterval(updateBadge, 4000);
+  });
 </script>
